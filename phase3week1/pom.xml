@@ -11,6 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>phase3week1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>phase3week1</name>
 	<description>Phase 3 week 1</description>
 	<properties>
@@ -25,6 +26,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -32,17 +37,29 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+
+		 <dependency>
+                       <groupId>org.apache.tomcat.embed</groupId>
+                       <artifactId>tomcat-embed-jasper</artifactId>
+                       <scope>provided</scope>
+                </dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-\
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 		</dependency>
 
+		<!-- Optional, test for static content, bootstrap CSS-->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>3.3.7</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
