@@ -1,8 +1,7 @@
 package com.example.restservice;
 
 
-import java.util.concurrent.atomic.AtomicLong;
-
+import java.util.ArrayList;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,16 +9,40 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ProductController {
 
-    private final AtomicLong counter = new AtomicLong();
 
+    private ArrayList<Product> products = new ArrayList<>();
+
+    private Product searchProduct(String name) {
+        for (Product product : products) {
+            if (product.getName().equals(name)) {
+                return product;
+            }
+        }
+        return null;
+    }
+
+    public ProductController() {
+        products.add((new Product(0, "product1")));
+        products.add((new Product(1, "product2")));
+        products.add((new Product(2, "product3")));
+        products.add((new Product(3, "product4")));
+
+    }
 
     // TODO: Add a collection that stores products and initialize with few products.
 
 
     @GetMapping("/product")
-    public Product getProduct(@RequestParam(value = "name", defaultValue = "Product") String name) {
+    public Product getProduct(@RequestParam(value = "name", defaultValue = "product1") String name) {
 
-        //TODO: search collection for product and return product if found, exception if not found.
-        return new Product(counter.incrementAndGet(), name + counter.toString());
+        Product searchedProduct = this.searchProduct(name);
+        if (searchedProduct != null) {
+            return searchedProduct;
+
+        }
+        else {
+            throw new ProductNotFoundException(name);
+
+        }
     }
 }
