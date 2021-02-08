@@ -16,13 +16,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @DataJpaTest
 
-public class AutenticationTests {
+public class AuthenticationTests {
 
     @Autowired
     private TestEntityManager entityManager;
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private LoginService loginService;
 
 
     @Test
