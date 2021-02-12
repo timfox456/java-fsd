@@ -19,6 +19,8 @@ Likely additional pages for login / registration, plus welcome page.
  * User must be logged in before adding or seeing the tasks. (spring boot security is acceptable but not mandatory.)
  * User must get registered, to perform the login.
  * User must implement swagger to generate the docs and UI.  (use the provided springfox module)
+ * Application RESTful API between UI and business logic is optional but not required.
+ * Either monolithic or microservice based architecture is acceptable.
 
 ### Important fields of this application:
  * Task name (text box)
