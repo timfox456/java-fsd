@@ -21,7 +21,11 @@ public class HttpRequestTest {
     @Test
     public void testGet() {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/", String.class)).contains("Hello");
+
+        //this.restTemplate.postForObject("http://localhost:" + port + "/", )
     }
+
+
 
 
 
