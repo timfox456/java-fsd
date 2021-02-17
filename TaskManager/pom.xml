@@ -36,6 +36,11 @@
     			<artifactId>springfox-boot-starter</artifactId>
     			<version>3.0.0</version>
 		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>3.0.0</version>
+		</dependency>
 
 
 		<dependency>
@@ -54,6 +59,16 @@
 			<artifactId>bootstrap-datepicker</artifactId>
 			<version>1.0.1</version>
 		</dependency>
+
+
+		!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.18</version>
+			<scope>provided</scope>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.webjars</groupId>

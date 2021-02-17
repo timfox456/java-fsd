@@ -11,7 +11,7 @@
 
 <p>Please enter the details of your task:</p>
 
-<form method="post">    
+<form method="post">
     <label for="name">UserName:</label>
     <input type="text" id="name" name="name"><br><br>
     <label for="startdate">Start Date:</label>

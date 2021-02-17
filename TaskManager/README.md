@@ -18,8 +18,8 @@ Likely additional pages for login / registration, plus welcome page.
  * All data must persist in the database. (User information should also be stored in database)
  * User must be logged in before adding or seeing the tasks. (spring boot security is acceptable but not mandatory.)
  * User must get registered, to perform the login.
- * User must implement swagger to generate the docs and UI.  (use the provided springfox module)
- * Application RESTful API between UI and business logic is optional but not required.
+ * User must implement swagger to generate the docs and UI.  (use the provided springfox module) **Not Required** 
+ * Application RESTful API between UI and business logic is optional but not required.  **Not Required** 
  * Either monolithic or microservice based architecture is acceptable.
 
 ### Important fields of this application:
