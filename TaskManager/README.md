@@ -30,3 +30,9 @@ Likely additional pages for login / registration, plus welcome page.
  * Email (text box)
  * Severity (drop down) (High, medium, low)
  * User (tasks should belong to a user)
+
+### Notes
+
+You may want to look at this link (Thanks to Thomas):
+
+[MySQL implementation](https://medium.com/@gustavo.ponce.ch/spring-boot-spring-mvc-spring-security-mysql-a5d8545d837d])
