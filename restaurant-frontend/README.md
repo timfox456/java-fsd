@@ -36,14 +36,11 @@ You are a web developer at a service-based web development company called Kite T
 
 ### The following requirements should be met:
 
-● The website should be responsive.
-
-● The website should have a carousel, a navbar, a CTA button, a grid, and a footer. 
-
-● The website should have a contact form.
-
-● The source code should be pushed to your GitHub repositories. You need to document the steps and write the algorithms in the Google Docs.
-
-● The link of your GitHub repository is must. In order to track your task, you need to share the link of the repository. You can add a section in the Google Docs. 
-
-● Document the step-by-step process involved in completing this task.
+ * The text content is unimportant and lorem ipsum is acceptable.
+ * There is no no need for sever-side code in the assigment.  
+ * The website should be responsive.
+ * The website should have a carousel, a navbar, a CTA button, a grid, and a footer. 
+ * The website should have a contact form.
+ * The source code should be pushed to your GitHub repositories. You need to document the steps and write the algorithms in the Google Docs.
+ * The link of your GitHub repository is must. In order to track your task, you need to share the link of the repository. You can add a section in the Google Docs. 
+ * Document the step-by-step process involved in completing this task.
