@@ -1,0 +1,40 @@
+body {
+    background-color: powderblue;
+}
+
+/*
+h1, h2, h3 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+
+p {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+    border: 2px solid blue;
+    padding: 30px;
+    margin: 50px;
+}
+
+a[target~=blank] {
+    background-color: yellow;
+}
+p.center {
+    text-align: center;
+    color:rgba(220,30,40,0.5);
+}
+
+h1.center {
+    text-align: center;
+    color: blue;
+}
+
+
+p.large {
+    font-size: 300%;
+}
+
+
+ */

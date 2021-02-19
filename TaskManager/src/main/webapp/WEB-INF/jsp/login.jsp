@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
-<h1>Login</h1>
+<!-- This is a comment -->
 
-<p>Please enter your username and password:</p>
+<h1 class="center">Login</h1>
+
+<p id="para1" class="center large">Please enter your username and password:</p>
 
 <form method="post">
     <label for="name">Task Name:</label>

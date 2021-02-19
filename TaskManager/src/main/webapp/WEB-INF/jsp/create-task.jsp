@@ -12,7 +12,7 @@
 <p>Please enter the details of your task:</p>
 
 <form method="post">
-    <label for="name">UserName:</label>
+    <label for="name">Task Name:</label>
     <input type="text" id="name" name="name"><br><br>
     <label for="startdate">Start Date:</label>
     <input type="date" id="startdate" name="startdate"><br><br>
@@ -30,6 +30,8 @@
         <option value="medium">Medium</option>
         <option value="low">Low</option>
     </select> <br><br>
+    <label for="user">User Name:</label>
+    <input type="text" id="user" name="user"><br><br>
     <input type="submit" value="Submit"><br><br>
     <input type="reset" value="Reset"><br><br>
 

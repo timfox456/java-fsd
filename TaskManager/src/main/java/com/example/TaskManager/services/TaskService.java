@@ -1,6 +1,7 @@
 package com.example.TaskManager.services;
 
 import com.example.TaskManager.entities.Task;
+import com.example.TaskManager.exceptions.TaskNotFoundException;
 import com.example.TaskManager.repositories.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,8 +19,14 @@ public class TaskService {
         return taskRepository.findAll();
     }
 
-    public Optional<Task> GetTaskById(Integer id) {
-        return taskRepository.findById(id);
+    //TODO: Should GetTaskById return Task rather than Optional<Task>?
+    public Optional<Task> GetTaskById(Integer id) throws TaskNotFoundException {
+        Optional<Task> foundTask = taskRepository.findById(id);
+
+        if (!foundTask.isPresent()) {
+            throw new TaskNotFoundException(id);
+        }
+        return (foundTask);
     }
 
     public Task AddTask(Task task) {
