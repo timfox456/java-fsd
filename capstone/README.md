@@ -19,7 +19,10 @@ A link to the original PDF (with pictures) is [here](./doc/capstone.pdf).
 
  * Add or remove genres, and update the details of existing genres
  * View and manage the categories that belong to a genre
- * Manage the list of products in a specific category, and edit product details • Assign an existing product to an additional, or move it to another category • Remove a product from a category or delete the product from the catalog • Manage orders by updating their status
+ * Manage the list of products in a specific category, and edit product details 
+ * Assign an existing product to an additional, or move it to another category 
+ * Remove a product from a category or delete the product from the catalog 
+ * Manage orders by updating their status
 
 ### Recommended technologies:
 
