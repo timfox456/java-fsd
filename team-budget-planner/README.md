@@ -36,9 +36,9 @@ This is by no means prescriptive, but you may want to store your deals inside a 
 
 ```javascript
 deals = [
-{"client_name" : "Microsoft", "project_name" : "Apollo Project", "Project Cost" : 1000},
-{"client_name" : "Intel", "project_name" : "Hermes Project", "Project Cost" : 10000},
-{"client_name" : "Apple", "project_name" : "Zeus Project", "Project Cost" : 100000}
+{"client_name" : "Microsoft", "project_name" : "Apollo Project", "project_cost" : 1000},
+{"client_name" : "Intel", "project_name" : "Hermes Project", "project_cost" : 10000},
+{"client_name" : "Apple", "project_name" : "Zeus Project", "project_cost" : 100000}
 ]
 ```
 
