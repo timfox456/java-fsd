@@ -22,6 +22,14 @@ A link to the original PDF (with pictures) is [here](./doc/capstone.pdf).
  * Manage the list of products in a specific category, and edit product details • Assign an existing product to an additional, or move it to another category • Remove a product from a category or delete the product from the catalog • Manage orders by updating their status
 
 ### Recommended technologies:
+
+Any technologies or frameworks are acceptable for your project, although the backand should be part of the java ecosystem.  Any
+dependency or API which you feel may be helpful is fine to use, provided you have the legal right to use it.
+
+These are merely suggestions and not necessarily a requirement for using them. 
+
+On the front end, frameworks like bootstrap, angular, react, jquery, etc are all acceptable (and encouraged) to use.
+
 1. Spring boot
 2. Java8
 3. H2 database
