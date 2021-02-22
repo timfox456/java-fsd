@@ -30,3 +30,15 @@ As a developer, you are assigned to a project. You need to develop a website whe
  * There are no specific requirments for the UI other than than it be functional to present the business data to the user.
 
 
+### Hints
+
+This is by no means prescriptive, but you may want to store your deals inside a javascript object that looks vaguely like this one:
+
+```javascript
+deals = [
+{"client_name" : "Microsoft", "project_name" : "Apollo Project", "Project Cost" : 1000},
+{"client_name" : "Intel", "project_name" : "Hermes Project", "Project Cost" : 10000},
+{"client_name" : "Apple", "project_name" : "Zeus Project", "Project Cost" : 100000}
+]
+```
+
