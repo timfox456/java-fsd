@@ -2,7 +2,7 @@
 
 This is the capstone project for the Java FSD.
 
-A link to the original PDF (with pictures) is [here](./docs/capstone.pdf).
+A link to the original PDF (with pictures) is [here](./doc/capstone.pdf).
 
 ## Developing Online Music Store
 
