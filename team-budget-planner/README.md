@@ -28,6 +28,12 @@ As a developer, you are assigned to a project. You need to develop a website whe
  * There is no persistence required, so any test data to be loaded at runtime can simply be hardcoded as javascript / json objects.  Any user data can be added interactively, but does not need to persist between sessions.
  * There is no need for security to be implemeted in this project.  One can assume that by the time the user is able to access your application that user identy has been authenticated and authorized.
  * There are no specific requirments for the UI other than than it be functional to present the business data to the user.
+ * Business Functionality should include:
+   - The ability to view, edit, add, and delete vendors.
+   - The ability to view, edit, add, and delete tasks.
+   - Separate views for program managers and finance team members (however, no security or login is requried to enforce the distinction).
+   - Some test data should be loaded (hardcoded) at page load time in order to have some data to show.
+ * As we have no back-end for maintaining state, state only needs to be maintained on the current user view.  State maintained between views or session management is not required.    
 
 
 ### Hints
