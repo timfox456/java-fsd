@@ -41,6 +41,7 @@ You are a web developer at a service-based web development company called Kite T
  * The website should be responsive.
  * The website should have a carousel, a navbar, a CTA button, a grid, and a footer. 
  * The website should have a contact form.
+ * The CTA (Call To Action) button's functionality can simply lead to another page on the site such as ordering, menu, or contact.  (Preferably order or menu)
  * The source code should be pushed to your GitHub repositories. You need to document the steps and write the algorithms in the Google Docs.
  * The link of your GitHub repository is must. In order to track your task, you need to share the link of the repository. You can add a section in the Google Docs. 
  * Document the step-by-step process involved in completing this task.
