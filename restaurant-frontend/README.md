@@ -31,7 +31,7 @@ You are a web developer at a service-based web development company called Kite T
 
 ● JavaScript: To handle events and responses
 
-● JQuery: To include JavaScript plugins like modals, tooltips, etc.
+● JQuery: To include JavaScript plugins like modals, tooltips, etc.  
 
 
 ### The following requirements should be met:
@@ -40,8 +40,12 @@ You are a web developer at a service-based web development company called Kite T
  * There is no no need for sever-side code in the assigment.  
  * The website should be responsive.
  * The website should have a carousel, a navbar, a CTA button, a grid, and a footer. 
- * The website should have a contact form.
+ * The website should have a contact form. (which doesn't need to actually do anything other than confirm that the contact details have been submitted.)
  * The CTA (Call To Action) button's functionality can simply lead to another page on the site such as ordering, menu, or contact.  (Preferably order or menu)
+ * The focus of this project should be visual and so application functionality such as contact form, order page, etc should have only the minimum business logic to support the visual aspects of the page.
+ * Form submittals such as contact or order don't need to do anything beyond giving visual cues to the user that hte form had been submitted.
+ * There is no need to store any data or allow user to query prior orders and/or contact details.
  * The source code should be pushed to your GitHub repositories. You need to document the steps and write the algorithms in the Google Docs.
  * The link of your GitHub repository is must. In order to track your task, you need to share the link of the repository. You can add a section in the Google Docs. 
  * Document the step-by-step process involved in completing this task.
+
