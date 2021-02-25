@@ -21,6 +21,14 @@
 
 </head>
 <body onload="CreateTableFromJSON()">
-    <input type="button" onclick="CreateTableFromJSON()" value="Create Table From JSON" />
     <p id="showData"></p>
+    <H3>Add New Deal</H3>
+    <p id="newData"> 
+        <label>Client Name</label><input type="text" id="clientNameInput" /><br />
+        <label>Project Name</label><input type="text" id="projectNameInput" /><br />
+        <label>Project Manager</label><input type="text" id="projectManagerInput" /><br />
+        <label>Project Cost</label><input type="number" id="projectCostInput" /><br />
+    </p>
+    <input type="button" onclick="AddNewDeal()" value="Add New Deal" />
+    
 </body>

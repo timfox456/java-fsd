@@ -1,10 +1,11 @@
 
 var myData = [
-    {"client_name" : "Microsoft", "project_name" : "Apollo Project", "project_manager" : "Mary", "project_cost" : 1000},
-    {"client_name" : "Intel", "project_name" : "Hermes Project", "project_manager" : "Bob", "project_cost" : 10000},
-    {"client_name" : "Apple", "project_name" : "Zeus Project", "project_manager" : "Jane", "project_cost" : 100000}
+    {"dealId" : 0, "client_name" : "Microsoft", "project_name" : "Apollo Project", "project_manager" : "Mary", "project_cost" : 1000},
+    {"dealId" : 1, "client_name" : "Intel", "project_name" : "Hermes Project", "project_manager" : "Bob", "project_cost" : 10000},
+    {"dealId" : 2, "client_name" : "Apple", "project_name" : "Zeus Project", "project_manager" : "Jane", "project_cost" : 100000}
 ]
 
+var currentDealId = myData.length;
 
 function CreateTableFromJSON() {    
     
@@ -49,3 +50,42 @@ function CreateTableFromJSON() {
     divContainer.innerHTML = "";
     divContainer.appendChild(table);
 }
+
+function AddNewDeal() {
+    var clientName = document.getElementById("clientNameInput").value;
+    var projectName = document.getElementById("projectNameInput").value;
+    var projectManager = document.getElementById("projectManagerInput").value;
+    var projectCost = document.getElementById("projectCostInput").value;
+
+
+    document.getElementById("clientNameInput").value = "";
+    document.getElementById("projectNameInput").value = "";
+    document.getElementById("projectManagerInput").value = "";
+    document.getElementById("projectCostInput").value = "";
+
+
+    InsertRow(currentDealId, clientName, projectName, projectManager, projectCost);
+    
+
+}
+
+function InsertRow(dealId, clientName, projectName, projectManager, projectCost) {
+    myData.push({"dealId": dealId, "client_name" : clientName, "project_name" : projectName, "project_manager" : projectManager, "project_cost" : projectCost})
+    currentDealId++;
+    CreateTableFromJSON();
+
+}
+
+function DeleteRow(dealId) {
+     
+    for( var i = 0; i < myData.length; i++){ 
+    
+        if ( myData[i].dealId === dealId) { 
+    
+            myData.splice(i, 1); 
+        }
+    
+    }
+    CreateTableFromJSON();
+}
+

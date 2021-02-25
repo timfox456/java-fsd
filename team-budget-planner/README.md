@@ -38,13 +38,36 @@ As a developer, you are assigned to a project. You need to develop a website whe
 
 ### Hints
 
+I have added some examples here, namely the following:
+
+ * [`create_table.js`](./create_table.js)
+ * [`table_example.html`](./table_example.html)
+
+These show some of the exerciese that we have done in class as illustrations.
+
 This is by no means prescriptive, but you may want to store your deals inside a javascript object that looks vaguely like this one:
 
 ```javascript
 deals = [
-{"client_name" : "Microsoft", "project_name" : "Apollo Project", "project_cost" : 1000},
-{"client_name" : "Intel", "project_name" : "Hermes Project", "project_cost" : 10000},
-{"client_name" : "Apple", "project_name" : "Zeus Project", "project_cost" : 100000}
+{"deal_id" : 0 , "client_name" : "Microsoft", "project_name" : "Apollo Project", "project_cost" : 1000},
+{"deal_id" : 1, "client_name" : "Intel", "project_name" : "Hermes Project", "project_cost" : 10000},
+{"deal_id" : 2 , "client_name" : "Apple", "project_name" : "Zeus Project", "project_cost" : 100000}
 ]
+```
+
+You may also want to consider using the `localstorage` object in javascript in order to store and persist small amounts of your data.
+
+Here's an example:
+
+```javascript
+
+// localstorage allows us to persist key value pairs in a way that would survive page refreshes, navigation, and user closing/reopening browser.
+// localstorage has limits to the size of each object stored.   
+
+localStorage.setItem("myData", "test")
+
+var myDataTest = localStorage.getItem("myData")
+
+
 ```
 
