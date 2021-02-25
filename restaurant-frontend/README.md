@@ -23,13 +23,13 @@ You are a web developer at a service-based web development company called Kite T
 ● Pushing the code to the git repository
 
 
-### You must use the following tools: 
+### You can use the following tools: 
 
 ● HTML: To define the content of the website
 
 ● Bootstrap: To build the website (this is required)
 
-● JavaScript: To handle events and responses
+● JavaScript (Optional): To handle events and responses
 
 ● JQuery (Optional): To include JavaScript plugins like modals, tooltips, etc.   (Use of JQuery beyond that portion used for bootstrap is optional.)
 
