@@ -9,6 +9,9 @@ Build a responsive website for a restaurant where users can read the details of 
 
 You are a web developer at a service-based web development company called Kite Technologies. The company has been approached by a client who wants to build a website for their restaurant named Ming’s Diner. The website should provide the users a brief overview of the restaurant and its bestsellers, its address, as well as an option to contact the restaurant. During sprint planning, you agree to lead this project and develop the website. 
 
+The focus of this project is largely on the *Visual* elements of the application and that should be your primary focus.  Business logic should only exist to the extent that it supports
+visual experience for the user.
+
 
 ### The tasks you are responsible for: 
 
