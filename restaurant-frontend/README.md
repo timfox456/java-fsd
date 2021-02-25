@@ -27,11 +27,11 @@ You are a web developer at a service-based web development company called Kite T
 
 ● HTML: To define the content of the website
 
-● Bootstrap: To build the website
+● Bootstrap: To build the website (this is required)
 
 ● JavaScript: To handle events and responses
 
-● JQuery: To include JavaScript plugins like modals, tooltips, etc.  
+● JQuery (Optional): To include JavaScript plugins like modals, tooltips, etc.   (Use of JQuery beyond that portion used for bootstrap is optional.)
 
 
 ### The following requirements should be met:
@@ -39,7 +39,7 @@ You are a web developer at a service-based web development company called Kite T
  * The text content is unimportant and lorem ipsum is acceptable.
  * There is no no need for sever-side code in the assigment.  
  * The website should be responsive.
- * The website should have a carousel, a navbar, a CTA button, a grid, and a footer. 
+ * The website should have a carousel, a navbar, a CTA button, a boostrap grid (as a page layout function), and a footer. 
  * The website should have a contact form. (which doesn't need to actually do anything other than confirm that the contact details have been submitted.)
  * The CTA (Call To Action) button's functionality can simply lead to another page on the site such as ordering, menu, or contact.  (Preferably order or menu)
  * The focus of this project should be visual and so application functionality such as contact form, order page, etc should have only the minimum business logic to support the visual aspects of the page.

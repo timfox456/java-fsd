@@ -5,7 +5,19 @@ var myData = [
     {"dealId" : 2, "client_name" : "Apple", "project_name" : "Zeus Project", "project_manager" : "Jane", "project_cost" : 100000}
 ]
 
+
 var currentDealId = myData.length;
+
+
+
+// localstorage allows us to persist key value pairs in a way that would survive page refreshes, navigation, and user closing/reopening browser.
+// localstorage has limits to the size of each object stored.   
+
+localStorage.setItem("myData", "test")
+
+var myDataTest = localStorage.getItem("myData")
+
+
 
 function CreateTableFromJSON() {    
     
@@ -43,6 +55,11 @@ function CreateTableFromJSON() {
             var tabCell = tr.insertCell(-1);
             tabCell.innerHTML = myData[i][col[j]];
         }
+        // Insert Extra Cell for the Delete Icon
+        //TODO: Complete this
+        //var tabCell = tr.insertCell(-1);
+        //tabCell.innerHTML = '<button onclick="DeleteRow(' + myData[i].dealId + ')"> <img src="trashcan.png"> </button>'
+
     }
 
     // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
