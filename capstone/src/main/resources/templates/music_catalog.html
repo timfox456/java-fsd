@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Catalog</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th> Song Name</th>
+                <th> Album Name</th>
+                <th> Track Number</th>
+                <th > Price</th>
+            </tr>
+        </thead>
+    <tbody>
+        <tr th:each="music, iStat : ${music}" >
+            <td th:text="${music.name}" />
+            <td th:text="${music.album.name}" />
+            <td th:text="${music.trackNumber}" />
+            <td th:text="${music.price}" />
+        </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>

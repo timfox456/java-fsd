@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+import org.springframework.ui.Model;
+
 
 @Controller
 public class MusicCatalogController {
@@ -19,13 +21,13 @@ public class MusicCatalogController {
     MusicService musicService;
 
 
-    @RequestMapping(value = "/display-music", method = RequestMethod.GET)
-    public String displayMusic(ModelMap model) {
-        String name = (String) model.get("name");
+    @RequestMapping(value = "/music_catalog", method = RequestMethod.GET)
+    public String greeting(Model model) {
+
         Iterable<Music> Musics = musicService.GetAllMusic();
 
-        model.put("music", musicService.GetAllMusic());
-        return "display-Musics";
+        model.addAttribute("music", musicService.GetAllMusic());
+        return "music_catalog";
     }
 
 
